@@ -8,3 +8,55 @@ body {
     justify-content: flex-start;
     background-color: #333;
     padding: 10px 20px;
+}
+
+/* style for links */
+.navbar a {
+    color: white;
+    text-decoration: none;  /* no underline */
+    background-color: #8d8d8d;
+    padding: 10px 15px;
+    display: block;
+}
+
+.navbar a:hover {
+    background-color: #575757;
+}
+
+.dropdown {
+    position: relative; /* Parent relative for dropdown positioning */
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: 0; /* Align dropdown to the left */
+    background-color: #444;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 0; /* Remove default padding for the dropdown container */
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    box-sizing: border-box; /* Ensure consistent padding */
+}
+
+
+.dropdown-content a:hover {
+    background-color: #575757;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Align navbar items */
+.navbar .dropdown {
+    margin-right: 15px;
+}
